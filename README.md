@@ -5,35 +5,19 @@ The nonprofit foundation Alphabet Soup wants a tool that can help it select the 
 From Alphabet Soup’s business team, you have received a CSV containing more than 34,000 organizations that have received funding from Alphabet Soup over the years. Within this dataset are a number of columns that capture metadata about each organization, such as:
 
 * EIN and NAME—Identification columns
-APPLICATION_TYPE—Alphabet Soup application type
-AFFILIATION—Affiliated sector of industry
-CLASSIFICATION—Government organization classification
-USE_CASE—Use case for funding
-ORGANIZATION—Organization type
-STATUS—Active status
-INCOME_AMT—Income classification
-SPECIAL_CONSIDERATIONS—Special considerations for application
-ASK_AMT—Funding amount requested
-IS_SUCCESSFUL—Was the money used effectively
-Before You Begin
-IMPORTANT
-The instructions below are now updated to use Google Colab for this assignment instead of Jupyter Notebook. If you have already started this assignment using a Jupyter Notebook then you can continue to use Jupyter instead of Google Colab.
+* APPLICATION_TYPE—Alphabet Soup application type
+* AFFILIATION—Affiliated sector of industry
+* CLASSIFICATION—Government organization classification
+* USE_CASE—Use case for funding
+* ORGANIZATION—Organization type
+* STATUS—Active status
+* INCOME_AMT—Income classification
+* SPECIAL_CONSIDERATIONS—Special considerations for application
+* ASK_AMT—Funding amount requested
+* IS_SUCCESSFUL—Was the money used effectively
 
-Create a new repository for this project called deep-learning-challenge. Do not add this Challenge to an existing repository.
-
-Clone the new repository to your computer.
-
-Inside your local git repository, create a directory for the Deep Learning Challenge.
-
-Push the above changes to GitHub.
-
-Files
-Download the following files to help you get started:
-
-Module 21 Challenge filesLinks to an external site.
-
-Instructions
-Step 1: Preprocess the Data
+## Instructions
+### Step 1: Preprocess the Data
 Using your knowledge of Pandas and scikit-learn’s StandardScaler(), you’ll need to preprocess the dataset. This step prepares you for Step 2, where you'll compile, train, and evaluate the neural network model.
 
 Start by uploading the starter file to Google Colab, then using the information we provided in the Challenge files, follow the instructions to complete the preprocessing steps.
@@ -55,7 +39,7 @@ Split the preprocessed data into a features array, X, and a target array, y. Use
 
 Scale the training and testing features datasets by creating a StandardScaler instance, fitting it to the training data, then using the transform function.
 
-Step 2: Compile, Train, and Evaluate the Model
+### Step 2: Compile, Train, and Evaluate the Model
 Using your knowledge of TensorFlow, you’ll design a neural network, or deep learning model, to create a binary classification model that can predict if an Alphabet Soup-funded organization will be successful based on the features in the dataset. You’ll need to think about how many inputs there are before determining the number of neurons and layers in your model. Once you’ve completed that step, you’ll compile, train, and evaluate your binary classification model to calculate the model’s loss and accuracy.
 
 Continue using the file in Google Colab in which you performed the preprocessing steps from Step 1.
@@ -78,7 +62,7 @@ Evaluate the model using the test data to determine the loss and accuracy.
 
 Save and export your results to an HDF5 file. Name the file AlphabetSoupCharity.h5.
 
-Step 3: Optimize the Model
+### Step 3: Optimize the Model
 Using your knowledge of TensorFlow, optimize your model to achieve a target predictive accuracy higher than 75%.
 
 Use any or all of the following methods to optimize your model:
@@ -103,7 +87,7 @@ Design a neural network model, and be sure to adjust for modifications that will
 
 Save and export your results to an HDF5 file. Name the file AlphabetSoupCharity_Optimization.h5.
 
-Step 4: Write a Report on the Neural Network Model
+### Step 4: Write a Report on the Neural Network Model
 For this part of the assignment, you’ll write a report on the performance of the deep learning model you created for Alphabet Soup.
 
 The report should contain the following:
@@ -123,7 +107,7 @@ How many neurons, layers, and activation functions did you select for your neura
 Were you able to achieve the target model performance?
 What steps did you take in your attempts to increase model performance?
 Summary: Summarize the overall results of the deep learning model. Include a recommendation for how a different model could solve this classification problem, and then explain your recommendation.
-Step 5: Copy Files Into Your Repository
+### Step 5: Copy Files Into Your Repository
 Now that you're finished with your analysis in Google Colab, you need to get your files into your repository for final submission.
 
 Download your Colab notebooks to your computer.
@@ -132,8 +116,8 @@ Move them into your Deep Learning Challenge directory in your local repository.
 
 Push the added files to GitHub.
 
-Requirements
-Preprocess the Data (30 points)
+## Requirements
+### Preprocess the Data (30 points)
 Create a dataframe containing the charity_data.csv data , and identify the target and feature variables in the dataset (2 points)
 Drop the EIN and NAME columns (2 points)
 Determine the number of unique values in each column (2 points)
@@ -142,18 +126,18 @@ Create a new value called Other that contains rare categorical variables (5 poin
 Create a feature array, X, and a target array, y by using the preprocessed data (5 points)
 Split the preprocessed data into training and testing datasets (5 points)
 Scale the data by using a StandardScaler that has been fitted to the training data (5 points)
-Compile, Train and Evaluate the Model (20 points)
+### Compile, Train and Evaluate the Model (20 points)
 Create a neural network model with a defined number of input features and nodes for each layer (4 points)
 Create hidden layers and an output layer with appropriate activation functions (4 points)
 Check the structure of the model (2 points)
 Compile and train the model (4 points)
 Evaluate the model using the test data to determine the loss and accuracy (4 points)
 Export your results to an HDF5 file named AlphabetSoupCharity.h5 (2 points)
-Optimize the Model (20 points)
+### Optimize the Model (20 points)
 Repeat the preprocessing steps in a new Jupyter notebook (4 points)
 Create a new neural network model, implementing at least 3 model optimization methods (15 points)
 Save and export your results to an HDF5 file named AlphabetSoupCharity_Optimization.h5 (1 point)
-Write a Report on the Neural Network Model (30 points)
+### Write a Report on the Neural Network Model (30 points)
 Write an analysis that includes a title and multiple sections, labeled with headers and subheaders (4 points)
 Format images in the report so that they display correction (2)
 Explain the purpose of the analysis (4)
